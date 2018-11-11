@@ -1,0 +1,35 @@
+
+/* Split the screen in half */
+
+.btn{
+	padding-top:10		0px;
+	padding-bottom:100px;
+	padding-right:30px;
+	padding-left:30px;
+	background:#27AEE3;
+	font-family: Arial;
+	font-size:30px;
+	color:white;
+	margin:10px;
+	float:right;
+	align-self:right;
+
+	border: 1px solid grey;
+}
+
+.btn_2{		
+	padding:50px;
+	background:#27AEE3;
+	font-family: Arial;
+	font-size:30px;
+	color:white;
+	margin:10px;
+	float:right;
+	align-self:right;
+}
+.data
+{
+	font-family: Arial;
+	font-size: 60px;
+	color:black;
+}

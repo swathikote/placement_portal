@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The National Institute Of Engineering | Placement Portal | Login</title>
+<link href="../css/login.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <% include index.ejs %>
+  <div class="form_container">
+	<form method="POST" action="/user_login">
+  <div class="imgcontainer">
+    <img src="../images/img_login.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+    <label for="uname"><b>UserID</b></label>
+    <input type="text" placeholder="Enter Username" name="uid" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+  </div>
+  <div class="container" style="background-color:#f1f1f1;">
+    <u> <a href="#">
+    <div class="psw">Forgot password?</a></div>
+    </u>
+  </div>
+  </form>
+</body>
+</html>

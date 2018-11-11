@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="placement_portal" content="college placement portal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="30">
+	<title>The National Institute Of Engineering | Placement Portal</title>
+  <link href="../css/admin_dash.css" type="text/css" rel="stylesheet">
+<body> 
+  <% include index.ejs %>
+
+    <div class="container">
+      <div class="row">
+          <button class="btn">Logout</button>
+      </div>
+<hr>
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Details</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Student Details</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary"
+            onclick="">View Student Details</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">    Companies</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>View Company Details|Add Companies</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary" 
+            onclick="location.href='/companies'">View/Add Comapnies</button>
+          </div>
+        </div>
+      </div>
+     <hr>
+       <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Shortlisted Students</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>View Shortlisted Students|Add Shortlisted Students</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary"
+            onclick="location.href='/companies'">View/Add Shortlisted Students</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Recruited Students</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>View Recruited Students|Add Recruited Students</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary" 
+            onclick="#">View/Add Recruited Students</button>
+          </div>
+        </div>
+      </div>
+    
+
+</body>
+</head>
+</html>

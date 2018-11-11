@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="placement_portal" content="college placement portal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The National Institute Of Engineering | Placement Portal</title>
+  <link href="../css/add_comp.css" type="text/css" rel="stylesheet">
+<body>
+  <% include index.ejs %>
+ 
+    <form method="post" action="/add_companies" class="form">
+      <div class="title"><center>Add Company</center></div>
+    <div class="row">
+        <label for="name">Company Name</label>
+        <input type="text" id="name" name="company_name" placeholder="Company Name" required >
+    </div>  
+    <div class="row">
+        <label for="logo">Company Logo</label>
+        <input type="text" id="logo" name="logo" placeholder="Company Logo" value="NULL">
+    </div>
+    <div class="row">
+        <label for="email">Company Email</label>
+        <input type="text" id="email" name="email" placeholder="Company Email">
+    </div>
+    <div class="row">
+        <label for="number">Company Contact Number</label>
+        <input type="text" id="contact" name="contact" placeholder="Company Contact Number">
+    </div>
+    <div class="row">
+        <label for="address">Company Address</label>
+        <textarea id="placement_internship" name="address" placeholder="Company Address" rows="5"></textarea>
+      </div>
+    <div class="row">
+        <label for="P/I">Placement/Internship</label>
+        <input type="text" id="placement_internship" name="placement_internship" placeholder="Placement/Internship">
+      </div>
+    <div class="row">
+        <label for="branches">Allowed Branches</label>
+        <select id="branches" name="branches" multiple>
+          <option value="MCA">MCA</option>
+          <option value="MTECH">MTECH</option>
+          <option value="CSE">CSE</option>
+          <option value="ISE">ISE</option>
+          <option value="ECE">ECE</option>  
+          <option value="EE">EE</option>
+          <option value="MECH">MECH</option> 
+          <option value="CIVI">CIVIL</option>
+          <option value="IP">IP</option>          
+        </select>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <label for="details">Position Details</label>
+        <textarea id="details" name="details" placeholder="position details" required></textarea>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <label for="schedule">Company Schedule</label>
+        <textarea id="schedule" name="schedule" placeholder="company_schedule"></textarea>
+    </div>
+    <div class="row">
+        <label for="cgpa">Minimun CGPA Required</label>
+        <input type="text" id="cgpa" name="cgpa" placeholder="Minimum_CGPA_Required" >
+    </div>
+    <div class="row">
+        <label for="backlog">Active Backlog</label>
+        <select id="backlog" name="backlog">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+    </div>
+    <div class="row">
+        <label for="d_backlog">Dead Backlog</label>
+        <input type="text" id="d_backlog" name="d_backlog" placeholder="Dead_backlog">
+    </div>
+      <div class="row">
+        <label for="closed">Registration_closed</label>
+        <select id="closed" name="closed">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+    </div>
+    <br>
+    <div class="row">
+      <button>Submit</button>
+    </div>
+  </form>
+     </div>
+
+</body>
+</head>
+</html>

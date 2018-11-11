@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="placement_portal" content="college placement portal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The National Institute Of Engineering | Placement Portal</title>
+  <link href="../css/comp.css" type="text/css" rel="stylesheet">
+  <link href="../css/view_comp.css" type="text/css" rel="stylesheet">
+</head>
+<body> 
+  <% include index.ejs %>
+  <div class="container">
+      <div class="row">
+          <button class="btn">Logout</button>
+      </div>
+    </div>
+    <hr>
+      <div class="row">
+     <button class="btn_2"  onclick="document.getElementById('id01').style.display='block'"
+      style="width:auto;">Update Company Details</button>
+     <button class="btn_2" onclick="location.href='/">View Registered Students</button></span>
+     </div>
+     <hr>
+     <div id="id01" class="modal">
+     <div class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

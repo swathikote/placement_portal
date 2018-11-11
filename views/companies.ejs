@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="placement_portal" content="college placement portal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The National Institute Of Engineering | Placement Portal</title>
+  <link href="../css/comp.css" type="text/css" rel="stylesheet">
+<body>
+  <% include index.ejs %>
+     <div class="container">
+      <div class="row">
+          <button class="btn">Logout</button>
+      </div>
+          <hr>
+      <div class="row">
+     <button class="btn_2" onclick="location.href='/view_companies'">View Comapnies</button>
+     <button class="btn_2" onclick="location.href='/add_companies'">Add Companies</button></span>
+     </div>
+     <hr>
+     <div class="row">
+      <div clas="data">
+      <%= data %>
+    </div>
+   </div>
+
+</body>
+</head>
+</html>
